@@ -1,0 +1,91 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-image: url(img/Background.png);
+    background-size: cover;
+    color: #002a86;
+}
+
+p {
+    color: #002a86;
+    font-size: 22px;
+}
+
+.jumbotron {
+    text-align: center;
+    font-size: 22px;
+}
+
+b,
+strong {
+    font-weight: 700;
+    color: #9f1000;
+    text-shadow: -1px -1px 1px white, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+.lead {
+    text-align: center;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(img/menu.png);
+    padding: 0% 65%;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    background-color: #002a86;
+}
+
+.bg-light {
+    padding: 0px;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    color: yellow;
+}
+
+.row-cols-2>* {
+    background-color: #fccc00;
+    border: 1px solid #9f1000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 425px) {
+    .row-cols-2 {
+        display: block;
+        width: auto;
+    }
+    .row-cols-2>* {
+        width: auto;
+    }
+}
