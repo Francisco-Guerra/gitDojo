@@ -1,0 +1,58 @@
+@color1: #0303e0;
+
+@color2: #ffff1a;
+
+@cursiva: italic;
+
+@centrar: center;
+
+.mixBlueYellow{
+    background-color: @color1;
+    color: @color2;
+}
+
+//---------------------------------------------------
+
+body{
+    background-color: #ccffee;
+}
+
+a,
+.link {
+    color: white;
+    background-color:red;
+    padding: 10px;
+}
+.widget {
+    color: #fff;
+    background: #428bca;
+}
+
+h1, h2, #diezmo, #tanga {
+    color:@color1;
+    text-align: @centrar;
+    padding: 10px;
+}
+
+h3,li{
+    font-style: @cursiva;
+    color: @color1;
+}
+
+p,td,label{
+    padding: 10px;
+    .mixBlueYellow();
+    
+}
+
+th{
+    background-color: @color2;
+    color: @color1;
+}
+
+#boton{
+    text-align: @centrar;
+    background-color: @color2;
+    padding: 10px;
+}
+
