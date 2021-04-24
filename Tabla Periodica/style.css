@@ -1,0 +1,40 @@
+* {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0px 5px;
+}
+
+td,
+tr {
+    margin: 1px;
+}
+
+.azul {
+    background-color: #689bff;
+    border: 1px solid #8f8970;
+}
+
+.pink {
+    background-color: #fd9a98;
+    border: 1px solid #8f8970;
+}
+
+.green {
+    background-color: #1fca21;
+    border: 1px solid #8f8970;
+}
+
+.yellow {
+    background-color: #fecb00;
+    border: 1px solid #8f8970;
+}
+
+b {
+    color: #19139f;
+    font-size: 22px;
+}
+
+span {
+    color: #fc1d1d;
+}
