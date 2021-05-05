@@ -47,22 +47,17 @@ for (var i = 0; i < array.length; i++) {
 }
 
 //5.- Array: “N” último: Devuelve el elemento “N” último. Dado [[5,2,3,6,4,9,7],3], devuelve 6 (Posición arr[3]). Si el array es muy pequeño, devuelve null.
-var arr = [
-    [5, 2, 3, 6, 4, 9, 7], 3
-];
-
-function elementPosic() {
-    for (i = 0; i < arr.length; i++) {
-        for (j = 0; j < arr[0].length; j++){
-            if (arr[0].length < arr[1]) {
-                return "null"
-            } else {
-                return arr[0][arr[1]];
-            }
-        }
+function elementPosic(arreglo) {
+    var arr = arreglo[0];
+    var indice = arreglo[1];
+    if (arr.length <= indice) {
+        return "null"
     }
+    return arr[indice];
 }
-elementPosic();
+console.log(elementPosic([
+    [5, 2, 3, 6, 4, 9, 7], 3
+]));
 
 //6.- Array: Segundo más grande: Devuelve el segundo elemento más grande de un array. Dado [42,1,4,3.14,7], devuelve 7.  Si el array es muy pequeño, devuelve null.
 var x = [42, 1, 4, 3.14, 7];
