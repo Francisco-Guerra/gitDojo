@@ -53,13 +53,16 @@ var arr = [
 
 function elementPosic() {
     for (i = 0; i < arr.length; i++) {
-        pos = arr[1];
-        console.log(arr[0][pos])
-        return
+        for (j = 0; j < arr[0].length; j++){
+            if (arr[0].length < arr[1]) {
+                return "null"
+            } else {
+                return arr[0][arr[1]];
+            }
+        }
     }
 }
 elementPosic();
-
 
 //6.- Array: Segundo más grande: Devuelve el segundo elemento más grande de un array. Dado [42,1,4,3.14,7], devuelve 7.  Si el array es muy pequeño, devuelve null.
 var x = [42, 1, 4, 3.14, 7];
