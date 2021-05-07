@@ -1,6 +1,6 @@
 var users = [{ name: "Michael", age: 37 }, { name: "John", age: 30 }, { name: "David", age: 27 }];
 //1.- ¿Cómo harías print/log de la edad de John?
-console.log(users[0].age)
+console.log(users[1].age)
 
 //2.- ¿Cómo harías print/log del nombre del primer objeto?
 console.log(users[0]) //primer objeto
