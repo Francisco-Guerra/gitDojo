@@ -3,7 +3,8 @@ var users = [{ name: "Michael", age: 37 }, { name: "John", age: 30 }, { name: "D
 console.log(users[0].age)
 
 //2.- ¿Cómo harías print/log del nombre del primer objeto?
-console.log(users[0])
+console.log(users[0]) //primer objeto
+console.log(users[0].name) //nombre del primer objeto
 
 //3.- ¿Cómo harías print/log del nombre y la edad de cada usuario utilizando un for loop? Tu output debería verse algo como esto
 for (var i = 0; i < users.length; i++) {
