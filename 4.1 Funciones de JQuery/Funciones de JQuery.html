@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //begin to write 
+            $("p").click(function() {
+                $(this).hide("slow");
+            });
+            $("#mos").click(function() {
+                $("p").show(1000);
+            });
+            $("#tog").click(function() {
+                $("h1").toggle("fast");
+            });
+            $("#slimos").click(function() {
+                $("#hola").slideDown("fast");
+            });
+            $("#sliesc").click(function() {
+                $("#chao").slideUp("slow");
+            });
+            $("#slitog").click(function() {
+                $("#hola, #chao").slideToggle();
+            });
+            $("#fdIn").click(function() {
+                $("b").fadeIn(3000);
+            });
+            $("#fdOut").click(function() {
+                $("span").fadeOut(30, alert("me fui con fadeOut!"));
+            });
+            $("#adc").click(function() {
+                $("p:first").addClass("cambio");
+            });
+            $("#bfr").click(function() {
+                $("li").before("Before_");
+            });
+            $("#aftr").click(function() {
+                $("li").after("-After");
+            });
+            $("#apd").click(function() {
+                $("ol").append("<li>añadiendo lista</li>");
+            });
+            $("#htm").click(function() {
+                $("p:last").html("<strong>Reemplazo el lorem</strong>");
+            });
+            $("#atri").click(function() {
+                $("h1").attr("style", "background: yellow; color: blue");
+            });
+            $("#val").click(function() {
+                $("input:text").val("Giuseppe");
+            });
+            $("#txt").click(function() {
+                $("p").text("Gracias por revisar las funciones JQuery");
+            });
+        })
+    </script>
+    <style>
+        #hola {
+            background-color: blue;
+            color: white;
+            padding: 30px;
+            display: none;
+        }
+        
+        #chao {
+            background-color: red;
+            color: white;
+            padding: 30px;
+        }
+        
+        b {
+            display: none;
+            background-color: salmon;
+            padding: 30px;
+        }
+        
+        span {
+            display: inline-block;
+            background-color: slateblue;
+            color: snow;
+            padding: 30px;
+        }
+        
+        .cambio {
+            color: rgb(60, 19, 245);
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="tog">Toggle</button><br><br>
+        <button id="atri">Atributo a "h1" attr "Style"</button>
+        <h1>Estamos probando la funcion Toggle</h1>
+        <button id="mos">Mostrar "p"</button> <br>
+        <br>
+        <button id="adc">addClass (1° "p")</button>
+        <button id="htm">Reemplazo texto (last "p")</button>
+        <p>1.- CLICKEAME EN EL TEXTO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam vitae dolore quod dolores expedita recusandae voluptas eius ipsam error? Dicta commodi ratione consequatur, dignissimos necessitatibus harum
+            quis molestias rerum.</p>
+        <p>2.- CLICKEAME EN EL TEXTO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, accusamus corporis error placeat repellat perspiciatis quia? Tempore quidem impedit sed voluptatibus facilis sunt, reiciendis optio! Ducimus perspiciatis
+            dolores architecto maiores.
+        </p>
+    </div>
+    <div>
+        <Button id="slimos">Click funcion slideDown</Button>
+        <button id="sliesc">Click funcion slideUp</button>
+        <button id="slitog">Click funcion slideToggle</button>
+        <div id="hola">Hola</div>
+        <div id="chao">Chao</div>
+    </div>
+    <div>
+        <button id="fdIn">fadeIn</button>
+        <button id="fdOut">fadeOut</button>
+        <b>fadeIn</b>
+        <span> fadeOut</span>
+    </div>
+    <div>
+        <button id="apd">Append</button>
+        <button id="bfr">Before</button>
+        <button id="aftr">After</button>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </div>
+    <div>
+        <button id="val">Arroja el Value</button>
+        <span>Nombre: <input type="text" name="user"></span>
+    </div>
+    <div>
+        <button id="txt">Reemplazar el texto "p"</button>
+    </div>
+
+</body>
+
+</html>
