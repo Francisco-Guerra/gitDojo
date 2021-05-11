@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('img').click(function() {
+                var src1 = $(this).attr("src");
+                $(this).attr("src", $(this).attr("src2"));
+                $(this).attr("src2", src1);
+            });
+        });
+    </script>
+    <style>
+        img {
+            display: block;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/ninja0.png" src2="img/cat0.png">
+    <img src="img/ninja1.png" src2="img/cat1.png">
+    <img src="img/ninja2.png" src2="img/cat2.png">
+    <img src="img/ninja3.png" src2="img/cat3.png">
+    <img src="img/ninja4.png" src2="img/cat4.png">
+</body>
+
+</html>
