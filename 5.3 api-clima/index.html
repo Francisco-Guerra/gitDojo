@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api-clima</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+                $('form').submit(function() {
+
+                    var busq = $("#buscar").val();
+                    if (busq == "") {
+                        alert("Ingrese Ciudad")
+                    } else {
+
+                        $.get("https://api.openweathermap.org/data/2.5/weather?q=" + busq + "&appid=189087c94c9653536a0a37d4ea3a5128&lang=es", function(resultado) {
+
+                            var city = resultado.name; //Ciudad
+                            var sky = resultado.weather[0].description; //descripcion cielo
+                            var temp = resultado.main.temp; //temperatura
+                            var coordLat = resultado.coord.lat;
+                            var coordLon = resultado.coord.lon; //coordenadas
+
+                            $("#ciudad").append(city + "<br>");
+                            $("#cielo").append(sky + "<br>");
+                            $("#temperatura").append(temp - 273.15, " °C" + "<br>");
+                            $("#coordenadas").append(coordLat, " , ", coordLon + "<br>");
+
+                        }, 'json');
+                    }
+                    return false;
+                });
+
+            }
+
+        )
+    </script>
+    <style>
+        * {
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        
+        #ciudad {
+            background-color: #9fa6ad;
+        }
+        
+        #cielo {
+            background-color: #9fbddc;
+        }
+        
+        #temperatura {
+            background-color: #ea8080;
+        }
+        
+        #coordenadas {
+            background-color: #9a7771;
+        }
+        
+        input {
+            background-color: #b1fbb8;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="GET">
+
+        <input id="buscar" type="text" value="" placeholder="Búsque su ciudad">
+        <br><br>
+        <div id="ciudad"><br> Ciudad Consultada:
+        </div>
+        <div id="cielo"><br> Condicion del Cielo:
+        </div>
+        <div id="temperatura"><br> La Temperatura Actual es de:
+        </div>
+        <div id="coordenadas"><br> Las Coordenadas Corresponden a:
+        </div>
+
+    </form>
+
+</body>
+
+</html>
