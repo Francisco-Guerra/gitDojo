@@ -1,0 +1,13 @@
+CREATE DATABASE User_dashboard
+
+INSERT INTO Usuarios (nombre, apellido, email, contraseña, registrado, actualizado)
+VALUES ('Cardinal','Kara', 'Melo', 'kmelo@yahoo.com', '12345', 'DATETIME', 'NOW()');
+
+SELECT DATE_FORMAT(registrado,"%a %d %M %Y %T");
+SELECT nombre, apeliido FROM Usuarios;
+
+UPDATE Usuarios
+SET actualizado = DATE_FORMAT(actualizado,"%a %d %M %Y %T"), nombre= 'Rosa'
+WHERE idUsuario = 1;
+
+DELETE FROM Usuarios WHERE email = 'kmelo@yahoo.com';
