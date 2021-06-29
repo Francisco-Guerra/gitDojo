@@ -5,8 +5,11 @@ public class GorillaTest {
 		Gorilla mono = new Gorilla();
 		
 		mono.throwSomething();
-		mono.climb();
+		mono.throwSomething();
+		mono.throwSomething();
 		mono.eatBananas();
+		mono.eatBananas();
+		mono.climb();
 		mono.displayEnergy();
 	}
 }
