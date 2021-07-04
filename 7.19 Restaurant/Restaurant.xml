@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8">
+
+<RestaurantMenu>
+    <breakfastMenu category = "breakfast"> 
+        <item category = "pancitos">
+            <name> Matutino crujiente </name>
+            <description> Pan con Mantequilla, Queso o Huevo </description>
+            <price> $3.990 </price>
+        </item>
+        <item category = "pancitos">
+            <name> Alellulla </name>
+            <description> Pan con Huevo y Ajo o Barros Luco </description>
+            <price> $4.990 </price>
+        </item>
+        <item category = "pancitos">
+            <name> Fitness </name>
+            <description> Yogurt con Avena, barra de Cereal y Fruta </description>
+            <price> $3.990 </price>
+        </item>
+        <item category = "líquidos">
+            <name> CoffeBreak </name>
+            <description> Cafe, Te o Hierbas </description>
+            <price> $1.090 </price>
+        </item>
+        <item category = "líquidos">
+            <name> Jugosos </name>
+            <description> Jugo Natural, Nectar o Batidos </description>
+            <price> $990 </price>
+        </item>
+    </breakfastMenu>
+
+    <lunchMenu>
+        <item category="entradas">
+            <name>Ensalada con Pollo</name>
+            <description>Una ensalada con pollo.</description>
+            <price>$10.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pollo</name>
+            <description>Un sánduche de pollo. </description>
+            <price>$12.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pastrami</name>
+            <description>Un sánduche hecho con pastrami.</description>
+            <price>$13.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Coca-Cola</name>
+            <description>Una gaseosa.</description>
+            <price>$0.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Jugo de Naranja</name>
+            <description>Un jugo hecho con naranjas.</description>
+            <price>$0.99</price>
+        </item>    
+    </lunchMenu>
+
+    <dinnerMenu category = "dinner">
+        <item category = "principal">
+            <name> Platos Chilenos </name>
+            <description> Curanto, Cazuelas, chorrillana, Pasteles </description>
+            <price> $4.990 </price>
+        </item>
+        <item category = "principal">
+            <name> Platos Extranjeros </name>
+            <description> Pastas o Pizza, Paella, Fajitas o Tacos, Sushis </description>
+            <price> $6.990 </price>
+        </item>
+        <item category = "principal">
+            <name> Platos Lights </name>
+            <description> Ensalada Waldorf, Brocoli al vapor, Rodajas de merluza, Brochetas mix </description>
+            <price> $5.990 </price>
+        </item>
+        <item category = "bebidas">
+            <name> bebidas calientes </name>
+            <description> Cafe, Te, Infusiones </description>
+            <price> $1.190 </price>
+        </item>
+        <item category = "bebidas">
+            <name> bebidas frias </name>
+            <description> Jugos, Gaseosas, Nectares </description>
+            <price> $1.490 </price>
+        </item>
+    </dinnerMenu>
+</RestaurantMenu>
+
+--> Analizar y dar una hipotesis de cada etiqueta del ejemplo anterior web.xml.<--
+
+● <display-name>
+    Se inicializa el proceso de lectura de los codigos y peticiones de acceso para dar respuesta al cliente
+● <servlet>
+    Se encarga de derivar las respuestas, en primer nivel a Mapping, en segundo nivel a name y class
+● <servlet-name>
+    Se accede a las rutas xml y servlets a la espera de respuestas
+● <servlet-class>
+    Accede y entrega respuesta de las pag web visitadas
+● <servlet-mapping>
+    Se hace seguimiento de las solicitudes
+● <url-pattern>
+    Peticion de respuestas a las web padres
+● <welcome-file>
+    Retorno al cliente de la web solicitada, ya presentando completamente la pagina que deseaba acceder
