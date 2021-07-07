@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+*{
+	text-align: center;
+}
+
+td{
+	width: 60px;
+	height: 60px;
+}
+tr{
+	width: 60px;
+	height: 60px;
+}
+.cuad1{
+	background-color: purple;
+}
+.cuad2{
+	background-color: blue;
+}
+table{
+	border-spacing: 0px;
+	display: inline-block;
+}
