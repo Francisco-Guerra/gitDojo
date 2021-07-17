@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+*{
+	vertical-align: middle;
+	text-align: center;
+}
+
+h1, #index{
+	text-align: center;
+}
+
+#date {
+	color: blue;
+}
+
+#time {
+	color: green;
+}
