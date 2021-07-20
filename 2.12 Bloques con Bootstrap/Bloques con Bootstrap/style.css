@@ -1,0 +1,40 @@
+.container-fluid {
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*-----------------------header-----------------------*/
+
+.header.row {
+    background-color: #343a41;
+}
+
+.header.container {
+    background-color: #46a3b8;
+    color: white;
+}
+
+
+/*-----------------------content-----------------------*/
+
+.aside.col-4 {
+    background-color: #46a3b8;
+}
+
+.main.col-7 {
+    background-color: #f4c109;
+}
+
+.article.col {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+
+/*-----------------------footer-----------------------*/
+
+.footer.row {
+    background-color: #3ca745;
+}
