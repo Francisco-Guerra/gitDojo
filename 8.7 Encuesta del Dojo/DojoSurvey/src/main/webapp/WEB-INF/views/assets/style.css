@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+
+*{
+	text-align: center;
+}
+
+table{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.container{
+	text-align: center;
+	width: 27%;
+}
